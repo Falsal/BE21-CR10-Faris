@@ -6,7 +6,11 @@ $tbody='';
 if(mysqli_num_rows($result)  > 0) {     
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){         
         $tbody .= "<tr>
-            <td><img class='img-thumbnail' src='image_collection/".$row['image']."'</td>
+            <td>
+                <a href='mediadetail.php?id=" .$row['id']."'>
+                <img class='img-thumbnail' src='image_collection/".$row['image']."' </a>
+            </td>
+            
             <td>".$row['ISBN']."</td>
             <td>".$row['title']. "</td>
             <td>".$row['type']."</td>
@@ -55,10 +59,12 @@ $connect->close();
     </head>
     <body>
         <div class="container manageMedia w-100 mt-3">    
-            <div class='mb-3'>
-                <a href= "create.php"><button class='btn btn-primary'type="button" >Add Media</button></a>
+            <div class="container d-flex justify-content-between">
+                <p class='h2'>Media  <span class='h5' style="color:green">(click on thumbnail for details)</span> </p>
+                <div class='mb-3 d-flex '>
+                    <a href= "create.php"><button class='btn btn-warning'type="button" >Add Media</button></a>
+                </div>
             </div>
-            <p class='h2'>Media</p>
             <table class='table table-striped'>
                 <thead class='table-success'>
                     <tr>

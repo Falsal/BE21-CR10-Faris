@@ -56,6 +56,7 @@ if ($_GET['id']) {
                         <th>Image</th>
                         <td>
                         <select class="form-select" aria-label="Default select example" name="image" >
+                        <option value="<?php echo $image ?>"><?php echo $image ?></option>
                         <option value="title_1.jpg">title_1</option>
                             <option value="title_2.png">title_2</option>
                             <option value="title_3.png">title_3</option>
