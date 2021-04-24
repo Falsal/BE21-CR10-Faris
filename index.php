@@ -63,8 +63,8 @@ $connect->close();
                 <thead class='table-success'>
                     <tr>
                         <th>ThumbN</th>
-                        <th>Title</th>
                         <th>ISBN</th>
+                        <th>Title</th>
                         <th>Book_type</th>
                         <th>Name</th>
                         <th>Surname</th>

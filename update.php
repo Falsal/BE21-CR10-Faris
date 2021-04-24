@@ -56,13 +56,21 @@ if ($_GET['id']) {
                         <th>Image</th>
                         <td>
                         <select class="form-select" aria-label="Default select example" name="image" >
-                            <option value="title_1.jpg">title_1</option>
+                        <option value="title_1.jpg">title_1</option>
                             <option value="title_2.png">title_2</option>
                             <option value="title_3.png">title_3</option>
                             <option value="title_4.png">title_4</option>
                             <option value="title_5.png">title_5</option>
                             <option value="title_6.png">title_6</option>
                             <option value="title_7.png">title_7</option>
+                            <option value="title_8.png">title_8</option>
+                            <option value="title_9.png">title_9</option>
+                            <option value="title_10.png">title_10</option>
+                            <option value="title_11.png">title_11</option>
+                            <option value="title_12.png">title_12</option>
+                            <option value="title_13.png">title_13</option>
+                            <option value="title_14.png">title_14</option>
+                            <option value="title_15.png">title_15</option>
                         </select>
                         </td>
                     </tr>
