@@ -10,7 +10,8 @@ if(mysqli_num_rows($result)  > 0) {
             <td>".$row['ISBN']."</td>
             <td>".$row['title']. "</td>
             <td>".$row['type']."</td>
-            <td>".$row['first_name']." ".$row['last_name']."</td>
+            <td>".$row['first_name']."</td>
+            <td>".$row['last_name']."</td>
             <td>".$row['description']."</td>
             <td>".$row['publish_date']."</td>
             <td>".$row['publisher_name']."</td>
@@ -66,7 +67,7 @@ $connect->close();
                         <th>ISBN</th>
                         <th>Book_type</th>
                         <th>Name</th>
-                        <!-- <th>Surname</th> -->
+                        <th>Surname</th>
                         <th>Description</th>
                         <th>Date Published</th>
                         <th>Publisher Name</th>

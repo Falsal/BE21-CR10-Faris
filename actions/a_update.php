@@ -15,6 +15,7 @@ if ($_POST) {
     $publisher_size=$_POST['publisher_size'];
     $publisher_address=$_POST['publisher_address'];
     $status=$_POST['status'];
+    // echo "_id  is :".$id." _and image var is :".$image;
 
     $sql = "UPDATE library_table SET 
         ISBN = '$ISBN', 
