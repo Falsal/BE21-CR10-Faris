@@ -1,6 +1,5 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+00:00";
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,15 +27,15 @@ CREATE TABLE `library_table` (
 
 INSERT INTO `library_table` (`id`, `title`, `image`, `first_name`, `last_name`, `ISBN`, `description`, `publish_date`, `publisher_name`, `type`, `publisher_address`, `publisher_size`, `status`) VALUES
 (1, 'HHKKKKK', 'title_1.jpg', 'ABAS', 'Miner', '5558888', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', '2012-05-02', 'Prosacco, Hoppe and Douglas', 'DVD', '267 Chive Plaza', 'small', 'borrowed'),
-(4, 'ut massa quis augue luctus', '04.jpg', 'Rébecca', 'Pheby', '448343198-6', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2016-10-26', 'Ritchie, Bogan and Powlowski', 'DVD', '383 Bobwhite Point', 'medium', 'reserved'),
-(5, 'mattis egestas metus aenean fermentum', '05.jpg', 'Loïs', 'Cristofvao', '804064771-1', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2011-02-01', 'Haag, Bartell and Barton', 'DVD', '42 Helena Junction', 'large', 'borrowed'),
-(6, 'metus sapien ut', '06.jpg', 'Marie-hélène', 'Helsdon', '042729628-5', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2013-02-01', 'Doyle-Jakubowski', 'DVD', '46 Chinook Crossing', 'small', 'available'),
+(4, 'ut massa quis augue luctus', 'title_4.png', 'Rébecca', 'Pheby', '9876543', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2016-10-26', 'Ritchie, Bogan and Powlowski', 'DVD', '383 Bobwhite Point', 'medium', 'reserved'),
+(5, 'egestas metus aenean fermentummattis ', 'title_2.png', 'Loïs', 'Cristofvao', '9999977777', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2011-02-01', 'Haag, Bartell and Barton', 'DVD', '42 Helena Junction', 'large', 'borrowed'),
+(6, 'sapien ut metus sapien ut', 'title_5.png', 'Marie-hélène', 'Helsdon', '333355555', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2013-02-01', 'Doyle-Jakubowski', 'book', '46 Chinook Crossing', 'small', 'available'),
 (7, 'pretium quis lectus suspendisse potenti', '07.jpg', 'Bérangère', 'Treanor', '316688743-1', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', '2018-06-12', 'Ratke-Wisozk', 'DVD', '8 Kropf Circle', 'small', 'borrowed'),
-(8, 'consequat ut nulla sed', '08.jpg', 'Almérinda', 'Grumell', '127390412-5', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis', '2013-12-04', 'Gutmann LLC', 'CD', '685 Esker Point', 'medium', 'reserved'),
-(9, 'massa quis augue', '03.jpg', 'Stéphanie', 'Adaway', '364790460-0', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. ', '2021-04-05', 'Russel, Wisozk and Rippin', 'DVD', '68 Eliot Park', 'small', 'reserved'),
-(11, ' title entered _1', 'title_7.png', 'Auther AbdRabu', 'AbdRabu', '44444444', 'hhhhhhhhSSSSSS', '0000-00-00', 'HablaHabla', 'book', '10, downing street', 'small', 'borrowed'),
-(12, ' The best title', 'title_7.png', 'George clooney', 'Zapata', '33333333333', 'KKLLKLKHGKFJDHTSRESZRESUTDR', '0000-00-00', 'Naolani gmbh', 'book', '20, Opernring', 'large', 'reserved'),
-(13, ' Book of the year', 'title_6.png', 'Jamal ', 'Sayonara', '99999999', 'asddcerclierufzh3rlfjkn3örfkj', '0000-00-00', 'CodeFactory', 'book', '25.04.2015', 'medium', 'available');
+(8, 'consequat ut nulla sed', 'title_7.png', 'Almérinda', 'Grumell', '679843329', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis', '2013-12-04', 'Gutmann LLC', 'CD', '685 Esker Point', 'medium', 'reserved'),
+(9, 'massa quis augue', 'title_4.png', 'Stéphanie', 'Adaway', '4676879444', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. ', '2021-04-05', 'Russel, Wisozk and Rippin', 'DVD', '68 Eliot Park', 'small', 'available'),
+(11, ' title entered _1', 'title_1.jpg', 'Auther AbdRabu', 'AbdRabu', '44444444', 'hhhhhhhhSSSSSS', '2021-07-29', 'HablaHabla', 'book', '10, downing street', 'small', 'borrowed'),
+(12, ' The best title', 'title_3.png', 'George clooney', 'Zapata', '33333333333', 'KKLLKLKHGKFJDHTSRESZRESUTDR', '2020-12-23', 'Naolani gmbh', 'book', '20, Opernring', 'large', 'reserved'),
+(13, ' Book of the year', 'title_6.png', 'Jamal ', 'Sayonara', '99999999', 'asddcerclierufzh3rlfjkn3örfkj', '2022-10-19', 'CodeFactory', 'book', '25.04.2015', 'medium', 'available');
 
 
 ALTER TABLE `library_table`
