@@ -22,7 +22,7 @@ if ($_GET['id']) {
     } else {
         header("location: error.php");
     }
-    $connect->close();
+ 
 } else {
     header("location: error.php");
 }
@@ -55,9 +55,8 @@ if ($_GET['id']) {
                         <th>Image</th>
                         <td>
                         <select class="form-select" aria-label="Default select example" name="image" type="text">
-                            
-                            <option value="title_2.png">title_2</option>
                             <option value="title_1.jpg">title_1</option>
+                            <option value="title_2.png">title_2</option>
                             <option value="title_3.png">title_3</option>
                             <option value="title_4.png">title_4</option>
                             <option value="title_5.png">title_5</option>

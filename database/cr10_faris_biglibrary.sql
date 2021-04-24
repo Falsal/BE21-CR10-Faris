@@ -34,7 +34,9 @@ INSERT INTO `library_table` (`id`, `title`, `image`, `first_name`, `last_name`, 
 (7, 'pretium quis lectus suspendisse potenti', '07.jpg', 'Bérangère', 'Treanor', '316688743-1', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', '2018-06-12', 'Ratke-Wisozk', 'DVD', '8 Kropf Circle', 'small', 'borrowed'),
 (8, 'consequat ut nulla sed', '08.jpg', 'Almérinda', 'Grumell', '127390412-5', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis', '2013-12-04', 'Gutmann LLC', 'CD', '685 Esker Point', 'medium', 'reserved'),
 (9, 'massa quis augue', '03.jpg', 'Stéphanie', 'Adaway', '364790460-0', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. ', '2021-04-05', 'Russel, Wisozk and Rippin', 'DVD', '68 Eliot Park', 'small', 'reserved'),
-(11, ' title entered _1', 'title_7.png', 'Auther AbdRabu', 'AbdRabu', '44444444', 'hhhhhhhhSSSSSS', '0000-00-00', 'HablaHabla', 'book', '10, downing street', 'small', 'borrowed');
+(11, ' title entered _1', 'title_7.png', 'Auther AbdRabu', 'AbdRabu', '44444444', 'hhhhhhhhSSSSSS', '0000-00-00', 'HablaHabla', 'book', '10, downing street', 'small', 'borrowed'),
+(12, ' The best title', 'title_7.png', 'George clooney', 'Zapata', '33333333333', 'KKLLKLKHGKFJDHTSRESZRESUTDR', '0000-00-00', 'Naolani gmbh', 'book', '20, Opernring', 'large', 'reserved'),
+(13, ' Book of the year', 'title_6.png', 'Jamal ', 'Sayonara', '99999999', 'asddcerclierufzh3rlfjkn3örfkj', '0000-00-00', 'CodeFactory', 'book', '25.04.2015', 'medium', 'available');
 
 
 ALTER TABLE `library_table`
@@ -42,7 +44,7 @@ ALTER TABLE `library_table`
 
 
 ALTER TABLE `library_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
