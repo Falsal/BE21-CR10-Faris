@@ -8,7 +8,6 @@ if ($_GET['id']) {
     if ($result->num_rows == 1) {
         $data = $result->fetch_assoc();
         $image = $data['image'];
-        echo "image is :".$image;
         $title = $data['title'];
         $ISBN = $data['ISBN'];
         $type = $data['type'];
