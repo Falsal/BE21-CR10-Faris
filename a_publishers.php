@@ -27,10 +27,19 @@ if(mysqli_num_rows($result)  > 0) {
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     {         
         $tbody .="
-        <div class='card mx-2' style='width: 18rem;'>
+        <div class='card mx-2' style='width: 17rem;'>
             <img src='image_collection/".$row['image']."' class='card-img-top' alt='m-image'>
             <div class='card-body'>
-                <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class='card-header fw-bold'>
+                ".$row['title']."
+                </div>
+                <ul class='list-group list-group-flush'>
+                    <li class='list-group-item'>
+                     ".$row['first_name'].",".$row['last_name']."
+                    </li>
+                    <li class='list-group-item'>
+                    Medium :".$row['type']."</li>
+                </ul>
             </div>
         </div>
         ";

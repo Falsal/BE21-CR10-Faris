@@ -64,6 +64,9 @@ $connect->close();
                 <div class='mb-3 d-flex '>
                     <a href= "create.php"><button class='btn btn-warning'type="button" >Add Media</button></a>
                 </div>
+                <div class='mb-3 d-flex '>
+                    <a href= "publishersList.php" target="_blank"><button class='btn btn-success'type="button" >Publishers</button></a>
+                </div>
             </div>
             <table class='table table-striped'>
                 <thead class='table-success'>

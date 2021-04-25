@@ -40,7 +40,7 @@ if ($_GET['id']) {
 <body>
     <div class="container d-flex justify-content-center h-100">
     
-        <div class="card" style="width: 40%;">
+        <div class="card" style="width: 25%;">
             <img src="image_collection/<?php echo $image ?>" class="card-img-top" alt="...">
             <div class="card-body">
                 <h4 class="card-title" style="color:green"> <?php echo $title ?> </h4>
