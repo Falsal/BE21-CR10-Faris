@@ -8,7 +8,7 @@ if ($_GET['id']) {
     if ($result->num_rows == 1) {
         $data = $result->fetch_assoc();
         $image = $data['image'];
-        echo "image is :".$image;
+        // echo "image is :".$image;
         $title = $data['title'];
         $ISBN = $data['ISBN'];
         $type = $data['type'];
@@ -49,7 +49,9 @@ if ($_GET['id']) {
     <body>
         <fieldset>
             <legend class='h2'>Update request <img class='img-thumbnail rounded-circle' src='image_collection/<?php echo 
-            $image ?>' alt="<?php echo $title ?>"></legend>
+            $image ?>' alt="<?php echo $loactionName ?>">
+            </legend>
+
             <form action="actions/a_update.php"  method="post" enctype="multipart/form-data">
                 <table class="table">
                     <tr>
@@ -57,7 +59,7 @@ if ($_GET['id']) {
                         <td>
                         <select class="form-select" aria-label="Default select example" name="image" >
                         <option value="<?php echo $image ?>"><?php echo $image ?></option>
-                        <option value="title_1.jpg">title_1</option>
+                            <option value="title_1.jpg">title_1</option>
                             <option value="title_2.png">title_2</option>
                             <option value="title_3.png">title_3</option>
                             <option value="title_4.png">title_4</option>
@@ -123,7 +125,7 @@ if ($_GET['id']) {
          
                     <tr>
                         <input type= "hidden" name= "id" value= "<?php echo $data['id'] ?>" />
-                        <input  name= "image" value= "<?php echo $data['image'] ?>" />
+                        <input type= "hidden" name= "image" value= "<?php echo $data['image'] ?>" />
                        
                         <td><button class="btn btn-success" type= "submit">Save Changes</button></td>
                         <td><a href= "index.php"><button class="btn btn-warning" type="button">Back</button></a></td>
