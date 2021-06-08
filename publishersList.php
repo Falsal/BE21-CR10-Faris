@@ -21,7 +21,7 @@ $result = mysqli_query($connect ,$sql);
 $tbody='';
 
 if(mysqli_num_rows($result)  > 0) {     
-    echo "Row number  : ".mysqli_num_rows($result);
+    // echo "Row number  : ".mysqli_num_rows($result);
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){         
         $tbody .= "
             <tr>                
@@ -52,10 +52,6 @@ $connect->close();
         <style type="text/css">
             .manageMedia {           
                 margin: auto;
-            }
-            .img-thumbnail {
-                width: 70px !important;
-                height: 70px !important;
             }
             td {          
                 text-align: center;

@@ -39,14 +39,19 @@ $connect->close();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CR-10-Faris</title>
+
         <?php require_once 'components/boot.php'?>
+
         <style type="text/css">
-            .manageMedia {           
-                margin: auto;
+            body{
+                min-height: 100vh;
+                margin: 0 auto;
+                max-width: 100%
             }
+
             .img-thumbnail {
-                width: 70px !important;
-                height: 70px !important;
+                width: 3em !important;
+                height: 3em !important;
             }
             td {          
                 text-align: left;
@@ -58,38 +63,53 @@ $connect->close();
         </style>
     </head>
     <body>
-        <div class="container manageMedia w-100 mt-3">    
-            <div class="container d-flex justify-content-between">
-                <p class='h2'>Media  <span class='h5' style="color:green">(click on thumbnail for details)</span> </p>
-                <div class='mb-3 d-flex '>
-                    <a href= "create.php"><button class='btn btn-warning'type="button" >Add Media</button></a>
-                </div>
-                <div class='mb-3 d-flex '>
-                    <a href= "publishersList.php" target="_blank"><button class='btn btn-success'type="button" >Publishers</button></a>
+        <div class="container mt-3"> 
+
+            <div class="container mx-3 pt-4 ">
+                <div class="row">
+                    <div class="col-6">
+                        <p class='h2'>Media  <span class='h5' style="color:green">(click on thumbnail for details)</span> </p>
+                    </div>
+                    <div class="col-3">
+                        <div class='mb-3  '>
+                            <a href= "create.php"><button class='btn btn-warning'type="button" >Add Media</button></a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class='mb-3  '>
+                            <a href= "publishersList.php" target="_blank"><button class='btn btn-success'type="button" >Publishers</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <table class='table table-striped'>
-                <thead class='table-success'>
-                    <tr>
-                        <th>ThumbN</th>
-                        <th>ISBN</th>
-                        <th>Title</th>
-                        <th>Book_type</th>
-                        <th>Name</th>
-                        <th>Surname</th>
-                        <th>Description</th>
-                        <th>Date Published</th>
-                        <th>Publisher Name</th>
-                        <th>Publisher Size</th>
-                        <th>Address</th>
-                        <th>Status</th>
-                        <th>action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?= $tbody;?>
-                </tbody>
-            </table>
+            <div class="container mx-0 px-3">
+                <div class="row mx-0">
+                    <div class="col-12">
+                        <table class='table table-striped mw-100'>
+                            <thead class='table-success'>
+                                <tr>
+                                    <th scope="col">ThumbN</th>
+                                    <th scope="col">ISBN</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Book_type</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Surname</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Date Published</th>
+                                    <th scope="col">Publisher Name</th>
+                                    <th scope="col"> Publisher Size</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?= $tbody;?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
